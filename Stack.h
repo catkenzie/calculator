@@ -3,7 +3,7 @@
 /* Stack.h
  *
  * a templated stack based on a linked list
- * EECS 280 Project 4
+ * 
  */
 
 #include "List.h"

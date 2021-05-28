@@ -1,4 +1,3 @@
-//Fabiola Belaen (fbelaen), Catherine Kenzie (catkenz)
 #include "List.h"
 #include "unit_test_framework.h"
 

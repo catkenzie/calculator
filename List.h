@@ -1,10 +1,9 @@
-//Fabiola Belaen (belaenf), Catherine Kenzie (catkenz)
+
 #ifndef LIST_H
 #define LIST_H
 /* List.h
 *
 * doubly-linked, double-ended list with Iterator interface
-* EECS 280 Project 4
 */
 
 #include <iostream>
@@ -141,10 +140,6 @@ public:
 		holder = nullptr;
 	}
 
-	// You should add in a default constructor, destructor, copy constructor,
-	// and overloaded assignment operator, if appropriate. If these operations
-	// will work correctly without defining these, you can omit them. A user
-	// of the class must be able to create, copy, assign, and destroy Lists
 
 private:
 	//a private type
@@ -177,12 +172,6 @@ public:
 	////////////////////////////////////////
 	class Iterator {
 		//OVERVIEW: Iterator interface to List
-
-		// You should add in a default constructor, destructor, copy constructor,
-		// and overloaded assignment operator, if appropriate. If these operations
-		// will work correctly without defining these, you can omit them. A user
-		// of the class must be able to create, copy, assign, and destroy Iterators.
-
 		// Your iterator should implement the following public operators: *,
 		// ++ (prefix), default constructor, == and !=.
 
@@ -313,14 +302,5 @@ public:
 		}
 	}
 
-};//List
-
-
-  ////////////////////////////////////////////////////////////////////////////////
-  // Add your member function implementations below or in the class above
-  // (your choice). Do not change the public interface of List, although you
-  // may add the Big Three if needed.  Do add the public member functions for
-  // Iterator.
-
-
+};
 #endif

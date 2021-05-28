@@ -25,11 +25,11 @@ class Stack {
 
 //default constructor (list)
   Stack() : list(List<T>()) {}
-  //?^
+  //
 
   //destructor
   //~Stack() { delete Stack; }
-  //??
+  //
 
   //copy constructor
   Stack(const Stack<T> &other) : list(List<T>(other.list)) {}

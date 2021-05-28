@@ -1,16 +1,9 @@
-//Fabiola Belaen (fbelaen), Catherine Kenzie (catkenz)
 #include "Stack.h"
 #include <string>
 #include <cassert>
 #include <iostream>
 #include <sstream>
 using namespace std;
-
-/*notes:
--not sure if assert(!s.empty()) is needed?? spec says 2 make sure
-stack is empty @ start, but i think once we read the input it shouldn't
-be empty
-*/
 
 //Helper functions:
 
@@ -139,6 +132,43 @@ void negative(Stack<double> &s) {
 		}
 		//If input is not a number check the operators and then letters
 		//Call on the correspoding helper function
+		else{
+			switch(input){
+				case "+" : 
+					add(s);
+					break;
+				case "-" :
+					subtract(s);
+					break;
+				case "*" : 
+					multiply(s);
+					break;
+				case "/" : 
+					divide(s);
+					break;
+				case "d" :
+					duplicate(s);
+					break;
+				case "r" : 
+					reverse(s);
+					break;
+				case "p" :
+					print(s);
+					break;
+				case "c" :
+					clear(s);
+					break;
+				case "a" :
+					print_all(s);
+					break;
+				case "n" :
+					negative(s);
+					break;	
+			}	
+			
+		}
+		
+		/* 
 		else if (input == "+") {
 			add(s);
 		}
@@ -170,6 +200,7 @@ void negative(Stack<double> &s) {
 		else if (input == "n") {
 			negative(s);
 		}
+		*/
 	}
 	return 0;
 }
